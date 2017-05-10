@@ -104,6 +104,9 @@
                                         <rect key="frame" x="54" y="60" width="267" height="31"/>
                                         <color key="minimumTrackTintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="maximumTrackTintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="greenSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="maL-ta-DXP"/>
+                                        </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="255" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="Him-xA-MoE" userLabel="Red Slider">
                                         <rect key="frame" x="54" y="15" width="267" height="31"/>
@@ -112,6 +115,9 @@
                                         </constraints>
                                         <color key="minimumTrackTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="maximumTrackTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="redSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="sM6-Br-ePp"/>
+                                        </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="255" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="W97-aV-eCD" userLabel="Blue Slider">
                                         <rect key="frame" x="54" y="105" width="267" height="31"/>
@@ -120,6 +126,9 @@
                                         </constraints>
                                         <color key="minimumTrackTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="maximumTrackTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="blueSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="11o-ff-0p3"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                                 <constraints>
@@ -147,6 +156,11 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9HV-TY-2SG" secondAttribute="bottom" id="s56-o7-VxK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueText" destination="nnu-4A-c2P" id="Mnw-JJ-VHz"/>
+                        <outlet property="greenText" destination="zFD-NH-WPt" id="iGV-3U-IpP"/>
+                        <outlet property="redText" destination="3Vy-Ry-NZx" id="aGh-Vb-fRE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
