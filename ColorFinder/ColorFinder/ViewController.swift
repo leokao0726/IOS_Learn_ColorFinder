@@ -21,20 +21,23 @@ class ViewController: UIViewController {
     @IBAction func redSliderChanged(_ sender: UISlider) {
         redValue = Int(sender.value)
         redText.text = "R: \(redValue)"
+        changeBackgroundColor()
     }
     
     @IBAction func greenSliderChanged(_ sender: UISlider) {
         greenValue = Int(sender.value)
         greenText.text = "G: \(greenValue)"
+        changeBackgroundColor()
     }
     
     @IBAction func blueSliderChanged(_ sender: UISlider) {
         blueValue = Int(sender.value)
         blueText.text = "B: \(blueValue)"
+        changeBackgroundColor()
     }
     
     func changeBackgroundColor(){
-        
+        view.backgroundColor = UIColor(red: CGFloat(redValue)/255.0, green: CGFloat(greenValue)/255.0, blue: CGFloat(blueValue)/255.0, alpha: 1.0)
     }
     
     
